@@ -1,4 +1,4 @@
-artifact_path: /workspaces/MLIP/mlruns/1/models/m-0a649b8ef4c446d6a712d75b56f6c882/artifacts
+artifact_path: /workspaces/MLIP/mlruns/2/models/m-530589dcbea34b6191eabf0120087899/artifacts
 flavors:
   python_function:
     data: data
@@ -15,14 +15,14 @@ flavors:
     save_format: tf
 is_signature_from_type_hint: false
 mlflow_version: 3.18.0
-model_id: m-0a649b8ef4c446d6a712d75b56f6c882
-model_size_bytes: 28950
-model_uuid: m-0a649b8ef4c446d6a712d75b56f6c882
+model_id: m-530589dcbea34b6191eabf0120087899
+model_size_bytes: 28951
+model_uuid: m-530589dcbea34b6191eabf0120087899
 prompts: null
-run_id: 3721c8bf5d21448fb06acec1794ebe01
+run_id: fb713ad9d93a4f32b99b9d21a427dc50
 signature:
   inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 11]}}]'
   outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
   params: null
 type_hint_from_example: false
-utc_time_created: '2026-11-04 11:14:50.111836'
+utc_time_created: '2026-11-04 16:33:29.598492'

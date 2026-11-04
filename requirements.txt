@@ -1,0 +1,9 @@
+#paste the following in the requirements.txt
+mlflow
+scikit-learn
+pandas 
+numpy
+keras
+tensorflow
+hyperopt
+notebook

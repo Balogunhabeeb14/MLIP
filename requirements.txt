@@ -1,5 +1,4 @@
 #paste the following in the requirements.txt
-mlflow
 scikit-learn
 pandas 
 numpy
@@ -7,3 +6,12 @@ keras
 tensorflow
 hyperopt
 notebook
+xgboost
+mlflow
+pandas
+numpy
+pyyaml
+joblib
+fastapi
+uvicorn
+streamlit

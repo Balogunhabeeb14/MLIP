@@ -4,6 +4,10 @@ import pandas as pd
 import joblib
 import mlflow
 import os
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+MODEL_PATH = BASE_DIR / "models" / "best_model.pkl"
 
 st.set_page_config(page_title="🏠 House Price Prediction", layout="centered")
 
@@ -16,7 +20,8 @@ st.markdown(
 )
 
 # Load best model
-MODEL_PATH = "../best_model.pkl"
+#MODEL_PATH = "../best_model.pkl"
+MODEL_PATH = MODEL_PATH
 if not os.path.exists(MODEL_PATH):
     st.error("⚠️ Model not found. Please train models first using `src/train.py`.")
     st.stop()

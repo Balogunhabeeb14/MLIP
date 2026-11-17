@@ -47,7 +47,12 @@ def train(config_path=None):
             mlflow.log_params(safe_params)
             mlflow.log_metric("RMSE", rmse)
             mlflow.log_metric("R2", r2)
-            mlflow.sklearn.log_model(model, name)
+            #mlflow.sklearn.log_model(model, name)
+            mlflow.sklearn.log_model(
+                sk_model=model,
+                name=name,
+                serialization_format="cloudpickle",
+            )
 
             print(f"{name}: R2={r2:.4f}, RMSE={rmse:.4f}")
 
